@@ -1,12 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --mainColor: #4e9eff; 
+    --mainColor2: #ff274b; 
+    --secondaryColor: #f7bcf7;
+    --lightColor: #fff;
+    --backGroundColor-1: #171a1c;
+    --backGroundColor-2: #22282a;
+    --color1: #D16BA5;
+    --color2: #fc67fa;
+    --color3: #f4c4f3;
+    --color4: #5FFBF1;
+    --color5: #051937;
+    --color6: #e35d5b;
+    --color7: #e53935;
+    --color8: #4e9;
+    --padding: 8%;
+}
 * {
+    font-family: 'poppins', sans-serif;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 header {
+    background-color: #f0f0f01a;
     width: 100%;
+    position: fixed;
+    z-index: 999;
     display: flex;
     justify-content: space-between;
-    background-color: rgba(164, 104, 210, 0.729);
+    align-items: center;
+    padding: 10px 200px;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 1.8em;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--mainColor);
+
+}
+
+header nav a {
+    color: var(--mainColor);
+    text-decoration: none;
+    font-size: 1.7em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+header nav a:hover {
+    color: var(--mainColor2);
+}
+section {
+    padding: 100px 200px;
+}
+
+.main {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: url(../imags/backgrund.jpeg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main h2 {
+    color:var(--color3);
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.main h2 span {
+    color: #4e9eff;
+    font-size: 3em;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 10px;
+}
+.main h3 {
+    color: var(--lightColor);
+    font-size: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
