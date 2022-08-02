@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-    --mainColor: #4e9eff; 
-    --mainColor2: #ff274b; 
+    --mainColor: #b2e6fc; 
+    --mainColor2: #4fa5c98a; 
+    --mainColor3: #ff6600; 
+    --mainColor4: #6a848f; 
+    --mainColor5: #4e9eff; 
+    --mainColor6: #ff274b; 
     --secondaryColor: #f7bcf7;
     --lightColor: #fff;
     --backGroundColor-1: #171a1c;
@@ -15,7 +19,7 @@
     --color6: #e35d5b;
     --color7: #e53935;
     --color8: #4e9;
-    --padding: 8%;
+    --padding: 10px 200px;
 }
 * {
     font-family: 'poppins', sans-serif;
@@ -33,7 +37,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 200px;
+    padding: var(--padding);
 }
 
 .logo {
@@ -48,15 +52,18 @@ header {
 header nav a {
     color: var(--mainColor);
     text-decoration: none;
+    text-transform: uppercase;
     font-size: 1.7em;
-    font-weight: 500;
+    font-weight: 400;
     padding-left: 30px;
+    transition: 0.7s;
 }
 header nav a:hover {
     color: var(--mainColor2);
+    letter-spacing: 1px;
 }
 section {
-    padding: 100px 200px;
+    padding: var(--padding);
 }
 
 .main {
@@ -72,22 +79,39 @@ section {
     background-attachment: fixed;
 }
 .main h2 {
-    color:var(--color3);
+    color:var(--mainColor);
     font-size: 1.4em;
     font-weight: 500;
 }
 .main h2 span {
-    color: #4e9eff;
+    color: var(--mainColor5);
     font-size: 3em;
     font-weight: 600;
     display: inline-block;
     margin-top: 10px;
 }
 .main h3 {
-    color: var(--lightColor);
+    color: var(--mainColor); 
     font-size: 2em;
     font-weight: 700;
     letter-spacing: 1px;
     margin-top: 10px;
     margin-bottom: 30px;
+}
+.projects-btn {
+    color: var(--lightColor);
+    background-color: #287de585;
+    display: inline-block;
+    padding: 20px;
+    margin-bottom: 40px;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 700;
+    border-radius: 15px;
+    transition: 0.7s ease;
+}
+.projects-btn:hover {
+    background-color: #287de5;
+    letter-spacing: 2px;
+    transform: scale(1.1);
 }
