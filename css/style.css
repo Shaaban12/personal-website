@@ -30,7 +30,7 @@
 }
 
 header {
-    background-color: #f0f0f01a;
+    background-color: #00000088;
     width: 100%;
     position: fixed;
     z-index: 999;
@@ -42,7 +42,7 @@ header {
 
 .logo {
     text-decoration: none;
-    font-size: 1.8em;
+    font-size: 1.5em;
     font-weight: 700;
     text-transform: uppercase;
     color: var(--mainColor);
@@ -53,7 +53,7 @@ header nav a {
     color: var(--mainColor);
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 1.7em;
+    font-size: 1em;
     font-weight: 400;
     padding-left: 30px;
     transition: 0.7s;
@@ -64,11 +64,11 @@ header nav a:hover {
 }
 section {
     padding: var(--padding);
+    width: 100%;
+    min-height: 100vh;
 }
 
 .main {
-    width: 100vw;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,14 +85,14 @@ section {
 }
 .main h2 span {
     color: var(--mainColor5);
-    font-size: 3em;
+    font-size: 2em;
     font-weight: 600;
     display: inline-block;
     margin-top: 10px;
 }
 .main h3 {
     color: var(--mainColor); 
-    font-size: 2em;
+    font-size: 1.2em;
     font-weight: 700;
     letter-spacing: 1px;
     margin-top: 10px;
@@ -108,10 +108,57 @@ section {
     font-size: large;
     font-weight: 700;
     border-radius: 15px;
+    letter-spacing: 1px;
     transition: 0.7s ease;
 }
 .projects-btn:hover {
     background-color: #287de5;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+    transform: scale(1.1);
+}
+.main .social-icons  {
+    display: inline-block;
+}
+.main .social-icons a {
+    color: #fff;
+    font-size: 1.7rem;
+    padding-right: 30px;
+    transition: 0.5s ease;
+}
+.main .social-icons a:hover {
+    color: var(--mainColor5);
+    font-size: 2rem;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+}
+
+.cards .tittle {
+    display: flex;
+    justify-content: center;
+    color: #287de5;
+    font-weight: 2.2em;
+    font-size: 800;
+    margin: 30px;
+    
+}
+.cards .containt {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.cards .containt .card {
+    background-color: var(--lightColor);
+    width: 30%;
+    box-shadow: 0 5px 25px rgba(1 1 1/15%);
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+.cards .containt .card:hover {
     transform: scale(1.1);
 }
