@@ -28,7 +28,35 @@
     padding: 0;
     scroll-behavior: smooth;
 }
+/* عناصر يتم استخدامها بكثره */
+section {
+    padding: var(--padding);
+    width: 100%;
+    min-height: 100vh;
+}
+.containt {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+}
 
+.tittle {
+    display: flex;
+    justify-content: center;
+    color: #287de5;
+    font-weight: 2.2em;
+    font-size: 800;
+    margin: 30px;
+    
+}
+/* عناصر يتم استخدامها بكثره */
+
+/* Start Navigation bar */
 header {
     background-color: #000000fd;
     width: 100%;
@@ -62,12 +90,9 @@ header nav a:hover {
     color: var(--mainColor2);
     letter-spacing: 1px;
 }
-section {
-    padding: var(--padding);
-    width: 100%;
-    min-height: 100vh;
-}
+/* End Navigation bar */
 
+/* Start Main Section */
 .main {
     display: flex;
     flex-direction: column;
@@ -129,28 +154,10 @@ section {
     color: var(--mainColor5);
     font-size: 2rem;
 }
+/* End Main Section */
 
-.cards{
-    display: flex;
-    flex-direction: column;
-}
-
-.tittle {
-    display: flex;
-    justify-content: center;
-    color: #287de5;
-    font-weight: 2.2em;
-    font-size: 800;
-    margin: 30px;
-    
-}
-.cards .containt {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.cards .containt .card {
+/* Start Services Section */
+.card {
     background-color: var(--lightColor);
     width: 30%;
     box-shadow: 0 5px 25px rgba(1 1 1/15%);
@@ -161,11 +168,15 @@ section {
     text-align: center;
 
 }
-.cards .containt .card:hover {
+.card:hover {
     transform: scale(1.1);
 }
-.cards .containt .card .icon{
+.card .icon{
     color: var(--mainColor5);
     font-size: 8em;
     text-align: center;
 }
+/* End Services Section */
+/* Start Project's Section */
+
+/* End Project's Section */
