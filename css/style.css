@@ -224,4 +224,33 @@ header nav a:hover {
 .more-details:hover {
     color: #601cfc;
 }
+.contact .content .icon {
+    font-size: 4.5em;
+}
+.contact .content .info h3 {
+    color: #000;
+}
+.contact .content p {
+    font-size: 1.5em;
+}
 /* End Project's Section */
+/* Start Footer Section */
+.footer {
+    background-color: #000016;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-tittle {
+    font-size: 1.3em;
+    font-weight: 800;
+}
+.footer-tittle span {
+    color: #3a6cf4;
+}
+.footer .social-icons a {
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+/* End Footer Section */
