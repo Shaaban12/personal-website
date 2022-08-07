@@ -19,7 +19,7 @@
     --color6: #e35d5b;
     --color7: #e53935;
     --color8: #4e9;
-    --padding: 10px 200px;
+    --padding: 100px 200px;
 }
 * {
     font-family: 'poppins', sans-serif;
@@ -65,7 +65,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: var(--padding);
+    padding: 10px 200px;
 }
 
 .logo {
