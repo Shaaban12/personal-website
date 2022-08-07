@@ -89,6 +89,7 @@ header nav a {
 header nav a:hover {
     color: var(--mainColor2);
     letter-spacing: 1px;
+    outline: none;
 }
 /* End Navigation bar */
 
@@ -234,6 +235,7 @@ header nav a:hover {
     font-size: 1.5em;
 }
 /* End Project's Section */
+
 /* Start Footer Section */
 .footer {
     background-color: #000016;
