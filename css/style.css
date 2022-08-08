@@ -84,12 +84,12 @@ header nav a {
     font-size: 1em;
     font-weight: 400;
     padding-left: 30px;
-    transition: 0.7s;
+    transition: 0.5s;
 }
 header nav a:hover {
     color: var(--mainColor2);
     letter-spacing: 1px;
-    outline: none;
+    padding-left: 23px;
 }
 /* End Navigation bar */
 
